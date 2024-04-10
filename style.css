@@ -6,6 +6,7 @@
     --text-color: #e3e3e3;
     --read-hover-color: #29a366;
     --add-hover-color: #cccccc;
+    --not-read-hover-color: #c54848;
 }
 
 * {
@@ -56,6 +57,7 @@ body {
 .book-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 7px;
 }
 
@@ -63,6 +65,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    align-items: stretch;
+    align-self: stretch;
+    padding: 0px 20px;
 }
 
 .book-title {
@@ -114,6 +120,10 @@ button {
 
 .add-button:hover, .remove-button:hover {
     background-color: var(--add-hover-color);
+}
+
+.not-read-button:hover {
+    background-color: var(--not-read-hover-color);
 }
 
 ::backdrop {
